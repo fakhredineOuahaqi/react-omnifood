@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import CustomersImages from "./CustomersImages";
 import hero from "../assets/img/hero.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -16,12 +17,13 @@ const Hero = () => {
             healthy again. Tailored to your personal tastes and nutritional
             needs.
           </p>
-          <a href="section-cta" className="btn btn--full margin-right-sm">
+          <Link to="/pricing" className="btn btn--full margin-right-sm">
             Start eating well
-          </a>
-          <a href="section-howto" className="btn btn--outline">
-            Learn more &darr;
-          </a>
+          </Link>
+          <Link to="/cta" className="btn btn--outline">
+            Sign up
+          </Link>
+
           <CustomersImages />
         </div>
         <div className="hero-img-box">
@@ -135,6 +137,9 @@ const Wrapper = styled.section`
     }
     .hero-img {
       width: 80%;
+    }
+    .heading-primary {
+      font-size: 4rem;
     }
   }
 `;

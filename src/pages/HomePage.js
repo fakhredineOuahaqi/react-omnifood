@@ -5,7 +5,6 @@ import {
   HowItWorks,
   Testimonials,
   FeaturedMeals,
-  Cta,
 } from "../components";
 
 const HomePage = () => {

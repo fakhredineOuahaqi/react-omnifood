@@ -6,7 +6,6 @@ import {
   Home,
   Error,
   Meals,
-  Checkout,
   AuthWrapper,
   Pricing,
   CtaPage,

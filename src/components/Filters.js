@@ -36,6 +36,9 @@ const Wrapper = styled.div`
   justify-content: center;
   gap: 3rem;
   margin-bottom: 4rem;
+  @media (max-width: 34em) {
+    gap: 1.5rem;
+  }
   button {
     background-color: #fff;
     text-transform: capitalize;

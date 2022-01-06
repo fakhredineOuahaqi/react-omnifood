@@ -38,6 +38,7 @@ export const MealsProvider = ({ children }) => {
 
   useEffect(() => {
     fetchMeals(`${url}${search}`);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const showSidebar = () => {
