@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import React, { useContext, useEffect, useReducer, useState } from "react";
 import reducer from "../reducers/meals_reducer";
@@ -23,7 +24,7 @@ const MealsContext = React.createContext();
 
 export const MealsProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const [search, setSearch] = useState("c");
+  const [search] = useState("c");
 
   const fetchMeals = async (url) => {
     dispatch({ type: GET_MEALS_BEGIN });
@@ -38,7 +39,6 @@ export const MealsProvider = ({ children }) => {
 
   useEffect(() => {
     fetchMeals(`${url}${search}`);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const showSidebar = () => {
