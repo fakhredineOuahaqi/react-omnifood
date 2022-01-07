@@ -27,18 +27,15 @@ const Cta = () => {
             </p>
             <form
               className="cta-form"
-              name="sign up"
-              method="post"
-              data-netlify="true"
-              onSubmit="submit"
+              action="https://formspree.io/f/mzbozojg"
+              method="POST"
             >
-              <input type="hidden" name="form-name" value="sign up" />
               <div>
                 <label htmlFor="full-name">Full Name</label>
                 <input
-                  name="full-name"
                   id="full-name"
                   type="text"
+                  name="full-name"
                   placeholder="John Smith"
                   required
                 />
@@ -46,9 +43,9 @@ const Cta = () => {
               <div>
                 <label htmlFor="email">Email address</label>
                 <input
-                  name="email"
                   id="email"
                   type="email"
+                  name="email"
                   placeholder="me@example.com"
                   required
                 />
@@ -57,7 +54,7 @@ const Cta = () => {
                 <label htmlFor="select-where">
                   Where did you hear from us?
                 </label>
-                <select id="select-where" name="select-where" required>
+                <select id="select-where" name="where" required>
                   <option value="">Please choose one option:</option>
                   <option value="friends">Friends and family</option>
                   <option value="youtube">Youtube video</option>
@@ -66,9 +63,7 @@ const Cta = () => {
                   <option value="others">Others</option>
                 </select>
               </div>
-              <button type="submit" className="btn btn--form">
-                Sign up now
-              </button>
+              <button className="btn btn--form">Sign up now</button>
             </form>
           </div>
           <div
