@@ -25,7 +25,14 @@ const Cta = () => {
               eating well today. You can cancel or pause anytime. And the first
               meal is on us!
             </p>
-            <form className="cta-form" name="sign-up" netlify>
+            <form
+              className="cta-form"
+              name="sign up"
+              method="post"
+              data-netlify="true"
+              onSubmit="submit"
+            >
+              <input type="hidden" name="form-name" value="sign up" />
               <div>
                 <label htmlFor="full-name">Full Name</label>
                 <input
@@ -59,7 +66,9 @@ const Cta = () => {
                   <option value="others">Others</option>
                 </select>
               </div>
-              <button className="btn btn--form">Sign up now</button>
+              <button type="submit" className="btn btn--form">
+                Sign up now
+              </button>
             </form>
           </div>
           <div
