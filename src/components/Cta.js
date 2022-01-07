@@ -25,10 +25,11 @@ const Cta = () => {
               eating well today. You can cancel or pause anytime. And the first
               meal is on us!
             </p>
-            <form className="cta-form">
+            <form className="cta-form" name="sign-up" netlify>
               <div>
                 <label htmlFor="full-name">Full Name</label>
                 <input
+                  name="full-name"
                   id="full-name"
                   type="text"
                   placeholder="John Smith"
@@ -38,6 +39,7 @@ const Cta = () => {
               <div>
                 <label htmlFor="email">Email address</label>
                 <input
+                  name="email"
                   id="email"
                   type="email"
                   placeholder="me@example.com"
@@ -48,7 +50,7 @@ const Cta = () => {
                 <label htmlFor="select-where">
                   Where did you hear from us?
                 </label>
-                <select id="select-where" required>
+                <select id="select-where" name="select-where" required>
                   <option value="">Please choose one option:</option>
                   <option value="friends">Friends and family</option>
                   <option value="youtube">Youtube video</option>
