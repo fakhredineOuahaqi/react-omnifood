@@ -52,25 +52,7 @@ const Diets = () => {
           <span className="list-icon">
             <IoCheckmarkOutline />
           </span>
-          <span>Low FODMAP </span>
-        </li>
-        <li className="list-item">
-          <span className="list-icon">
-            <IoCheckmarkOutline />
-          </span>
           <span>Kid-friendly </span>
-        </li>
-        <li className="list-item">
-          <span className="list-icon">
-            <IoCheckmarkOutline />
-          </span>
-          <span>Fasting </span>
-        </li>
-        <li className="list-item">
-          <span className="list-icon">
-            <IoCheckmarkOutline />
-          </span>
-          <span>Detox </span>
         </li>
       </ul>
     </div>
