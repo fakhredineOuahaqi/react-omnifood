@@ -50,6 +50,7 @@ const Wrapper = styled.div`
   border-radius: 11px;
   overflow: hidden;
   transition: all 0.4s;
+  height: 48rem;
 
   &:hover {
     transform: translateY(-1.2rem);
@@ -121,6 +122,8 @@ const Wrapper = styled.div`
 
   .meal-img {
     width: 100%;
+    height: 20rem;
+    object-fit: cover;
   }
 `;
 
