@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import CustomersImages from "./CustomersImages";
-import hero from "../assets/img/hero.png";
+import hero from "../assets/img/hero.webp";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
